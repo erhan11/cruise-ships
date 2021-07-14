@@ -1,14 +1,13 @@
+const Ship = require("../cruise-ships");
 
-const Ship = require('../cruise-ships');
+describe("Ship", () => {
+  it("can be instantiated", () => {
+    expect(new Ship()).toBeInstanceOf(Object);
+  })
 
-describe('Ship', ()=> {
-    it('can be instantiated', ()=> {
-        expect(new Ship()).toBeInstanceOf(Object);
-    });
+  it("has a starting port", () => {
+    const ship = new Ship("Dover");
 
-    it('has a starting port', ()=> {
-        const ship = new Ship('Dover');
-
-        expect(ship.startingPort).toBe('Dover');
-    });
+    expect(ship.startingPort).toBe("Dover");
+  });
 });
