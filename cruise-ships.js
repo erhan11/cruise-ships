@@ -9,4 +9,11 @@ function Ship(startingPort){
     
     //return Ship;
 }
+
+Ship.prototype.setSail = function setSail() {
+this.startingPort = "";
+}
+
+
 module.exports = Ship; 
+module.exports = Port;
